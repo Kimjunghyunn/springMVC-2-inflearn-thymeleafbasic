@@ -1,7 +1,6 @@
 package hello.thymeleaf.basic;
 
 import lombok.Data;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
-import javax.swing.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -126,7 +124,6 @@ public class BasicController {
         addUsers(model);
         return "basic/javascript";
     }
-
 
     @Data
     static class User {
